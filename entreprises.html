@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Entreprises</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+
+
+<header>
+<div class="logo">Polytech Security</div>
+<nav>
+<a href="index.html">Accueil</a>
+<a href="commerces.html">Commerces</a>
+<a href="entreprises.html">Entreprises</a>
+<a href="particuliers.html">Particuliers</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<center>
+<h1>Entreprises et indépendants</h1>
+<p class="lead">Sécurisez vos bureaux, entrepôts et locaux professionnels grâce à des systèmes modernes.</p>
+<a class="cta" href="mailto:info@polytech-security.be?subject=Devis">Demander un devis gratuit</a>
+</center>
+</section>
+
+<div class="grid">
+<div class="card"><h3>Vidéosurveillance professionnelle</h3><p>Caméras haute résolution pour surveiller les zones sensibles.</p></div>
+<div class="card"><h3>Contrôle d'accès sécurisé</h3><p>Gestion des entrées avec badges ou cartes RFID.</p></div>
+<div class="card"><h3>Détection incendie</h3><p>Systèmes d’alarme incendie conformes aux normes professionnelles.</p></div>
+<div class="card"><h3>Surveillance à distance</h3><p>Accès aux caméras depuis smartphone ou ordinateur.</p></div>
+<div class="card"><h3>Historique des accès</h3><p>Suivi des entrées et sorties du personnel.</p></div>
+<div class="card"><h3>Protection des employés</h3><p>Sécurisation des espaces de travail.</p></div>
+</div>
+
+<footer>
+© 2026 Polytech Security
+</footer>
+
+</div>
+
+<script>
+// SCROLL ANIMATION POUR LES BULLLES
+const cards = document.querySelectorAll(".card");
+function reveal(){
+  cards.forEach(card=>{
+    const top = card.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if(top < windowHeight - 60){
+      card.classList.add("visible");
+    }
+  });
+}
+window.addEventListener("scroll",reveal);
+reveal();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Particuliers</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<div class="logo">Polytech Security</div>
+
+<nav>
+<a href="index.html">Accueil</a>
+<a href="commerces.html">Commerces</a>
+<a href="entreprises.html">Entreprises</a>
+<a href="particuliers.html">Particuliers</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+<center>
+<h1>Sécurité pour particuliers</h1>
+
+<p class="lead">
+Protégez votre maison avec un système de vidéosurveillance moderne.
+</p>
+</center>
+</section>
+
+
+<div class="grid">
+
+<div class="card">
+<h3>Caméras HD</h3>
+<p>Images haute qualité pour surveiller votre propriété.</p>
+</div>
+
+<div class="card">
+<h3>Accès à distance</h3>
+<p>Consultez les caméras depuis votre smartphone.</p>
+</div>
+
+<div class="card">
+<h3>Installation discrète</h3>
+<p>Câblage propre et installation soignée.</p>
+</div>
+
+</div>
+
+<a class="cta" href="contact.html">Demander un devis</a>
+
+<footer>
+© 2026 Polytech Security
+</footer>
+
+</div>
+
+<script>
+const cards = document.querySelectorAll(".card");
+function reveal(){
+  cards.forEach(card=>{
+    const top = card.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if(top < windowHeight - 60){
+      card.classList.add("visible");
+    }
+  });
+}
+window.addEventListener("scroll",reveal);
+reveal();
+</script>
+
+
+
+
+
+</body>
+</html>
